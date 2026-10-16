@@ -95,6 +95,6 @@ func main() {
 		ReadHeaderTimeout: 300,
 	}
 
-	slog.Info("Serving on port: ", port)
+	slog.Info("Serving on port", "port", port)
 	log.Fatal(srv.ListenAndServe())
 }
